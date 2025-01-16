@@ -1,0 +1,20 @@
+﻿@model List<LabHelloMvc.Models.Person>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>All People</h1>
+
+@foreach(var item in Model)
+{
+    <div>
+        
+
+        <P>
+            @item.FirstName
+            @item.LastName<br/>
+       
+        </p>
+    </div>
+}
